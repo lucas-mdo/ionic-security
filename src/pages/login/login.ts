@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component/*, Input*/ } from '@angular/core';
 import { Storage } from '@ionic/storage';
 
 import { NavController } from 'ionic-angular';
@@ -10,8 +10,8 @@ import { ToastController } from 'ionic-angular';
 })
 export class LoginPage {
 
-  @Input() email : string;
-  @Input() password : string;
+  /*@Input()*/ email : string;
+  /*@Input()*/ password : string;
 
   constructor(public toastCtrl: ToastController, public storage: Storage, public navCtrl: NavController) {
        
